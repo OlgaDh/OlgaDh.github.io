@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>JavaScript Final Cheat Sheet</title>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+  $("#flip1").click(function(){
+    $("#panel1").slideToggle("slow");
+	$("#label-b1").hide();
+	$("#label-b2").hide();
+	$("#label-b3").hide();
+	$("#panel2").hide();
+	$("#def-a").show();
+  });
+    $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#panel1").hide();
+	$("#def-b").show();
+  });
+	$("#li-a1").click(function(){
+	$("#def-a").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a1").show();
+  });
+  	$("#li-a2").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a2").show();
+  });
+  	$("#li-a3").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a3").show();
+  });
+  	$("#li-a4").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a4").show();
+  });
+  	$("#li-a5").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a5").show();
+  });
+  	$("#li-a6").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a6").show();
+  });
+  	$("#li-a7").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a8").hide();
+	$("#label-a9").hide();
+	$("#label-a7").show();
+  });
+  	$("#li-a8").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a9").hide();
+	$("#label-a8").show();
+  });
+  	$("#li-a9").click(function(){
+	$("#def-a").hide();
+	$("#label-a1").hide();
+	$("#label-a2").hide();
+	$("#label-a3").hide();
+	$("#label-a4").hide();
+	$("#label-a5").hide();
+	$("#label-a6").hide();
+	$("#label-a7").hide();
+	$("#label-a8").hide();
+	$("#label-a9").show();
+  });
+  	$("#li-b1").click(function(){
+	$("#def-b").hide();
+	$("#label-b2").hide();
+	$("#label-b3").hide();
+	$("#label-b1").show();
+  });
+  	$("#li-b2").click(function(){
+	$("#def-b").hide();
+	$("#label-b1").hide();
+	$("#label-b3").hide();
+	$("#label-b2").show();
+  });
+  	$("#li-b3").click(function(){
+	$("#def-b").hide();
+	$("#label-b1").hide();
+	$("#label-b2").hide();
+	$("#label-b3").show();
+  });
+});
+</script>
+<style> 
+#flip1, #flip2, button {
+  padding: 5px;
+  text-align: center;
+  background-color: #2564c2;
+  border: solid 1px #b7b8ba;
+  color: #fdeeda;
+}
+
+#panel1, #panel2 {
+  padding: 5px;
+  text-align: none;
+  background-color: #b7b8ba;
+  border: solid 1px #b7b8ba;
+  color: #201e1a
+}
+
+#panel1, #panel2 {
+  padding: 0px;
+  display: none;
+}
+
+#label1, #label2 {
+  position: relative;
+  left: 150px;
+  font-size: 20px;
+  background-color: #77e9f2;  
+}
+
+#label2 {
+  left: 445px;
+}
+
+#label3, #label4 {
+  position: relative;
+  left: 300px;
+  font-size: 20px;
+}
+
+#label4 {
+  left: 595px;
+}
+
+#label-a1, #label-a2, #label-a3,
+#label-a4, #label-a5, #label-a6,
+#label-a7, #label-a8, #label-a9,
+
+#label-b1, #label-b2, #label-b3 { 
+  padding: none;
+  display: none;
+}
+
+span {
+  color: red;
+}
+
+body {
+	background-color:#e6ffff;
+}
+</style>
+</head>
+<body>
+
+<div id="flip1"><h1>JavaScript Language Fundamentals</h1></div>
+<div id="panel1">
+<table>
+<tr>
+<td>
+<h3>
+<ol>
+	<li id="li-a1">Variables</li>
+	<li id="li-a2">Operators</li>
+	<li id="li-a3">Conditional statements (if ..else if, switch)</li>
+	<li id="li-a4">Loops (for loop + your choice of another loop)</li>
+	<li id="li-a5">Functions</li>
+	<li id="li-a6">JS Objects General Overview</li>
+	<li id="li-a7">JS Built-in Objects - A list of at least 5 built-in objects</li>
+	<li id="li-a8">Array Object (in detail)</li>
+	<li id="li-a9">String Object (in detail)</li>
+</ol>
+</h3>
+</td>
+<td id="label1">
+<label></label>
+</td>
+<td id="label3">
+<label id="def-a">To detail the general syntax, methods, and properties (if applicable) press the subject on the left panel</label>
+<label id="label-a1">
+There are 3 ways to declare a JavaScript <b>variable</b>:
+<ul>
+<li>Using <span>var</span></li>
+<li>Using <span>let</span></li>
+<li>Using <span>const</span></li>
+</ul>
+Variables are containers for <b>storing data (values)</b>. <br>
+In programming, just like in algebra, we use variables <b>to hold values</b>,
+and, we use variables <b>in expressions</b>.<br><br>
+All JavaScript variables must be identified with unique names.<br>
+These unique names are called identifiers.<br>
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).<br>
+The general rules for constructing names for variables (unique identifiers) are:
+<ul>
+<li>Names can contain letters, digits, underscores, and dollar signs.</li>
+<li>Names must begin with a letter</li>
+<li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+<li>Names are case sensitive (y and Y are different variables)</li>
+<li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+</ul>
+JavaScript identifiers are case-sensitive.<br>
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.<br>
+The "equal to" operator is written like == in JavaScript.<br><br>
+<u>JavaScript <b>Data Types</b></u><br>
+JavaScript variables can hold numbers, text values, and other types of data.<br>
+Text values are called <b>text strings</b>.<br>
+Strings are written inside double or single quotes. Numbers are written without quotes.<br>
+If you put a number in quotes, it will be treated as a text string.<br><br>
+<u><b>Declaring (Creating) JavaScript Variables</b></u><br>
+Creating a variable in JavaScript is called "declaring" a variable.<br>
+After the declaration, the variable has no value (technically it has the value of undefined).<br>
+To assign a value to the variable, use the equal sign, or, you can also assign a value to the variable when you declare it.<br>
+It's a good programming practice to declare all variables at the beginning of a script.<br>
+You can declare many variables in one statement. Start the statement with var and separate the variables by <b>comma</b>:<br><br>
+In computer programs, variables are often declared without a value.<br> 
+The value can be something that has to be calculated, or something that will be provided later, like user input.<br>
+A variable declared without a value will have the value <i><b>undefined</b></i>.<br><br>
+If you <b>re-declare</b> a JavaScript variable, it will not lose its value.<br><br>
+You can do arithmetic with JavaScript variables, using operators like <b>=</b> and <b>+</b>.<br>
+You can also add strings, but strings will be <b>concatenated</b>.<br>
+If you put a number in <b>quotes</b>, the rest of the numbers will be treated as <b>strings, and concatenated</b>.<br><br>
+<a href="https://www.w3schools.com/js/js_variables.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a1" onclick="myFunction_a1()">Variables, code examples</button><br><br>
+<script>
+	function myFunction_a1(){
+		window.location="Codes/_Variables.html";
+		document.write('Please Wait...<br>Redirecting to Variables Page');
+		setTimeout('myFunction_a1()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a2">
+The assignment operator (=) assigns a value to a variable.<br>
+The addition operator (+) adds numbers.<br>
+The multiplication operator (*) multiplies numbers.<br><br>
+<b>JavaScript Arithmetic Operators</b><br>
+Arithmetic operators are used to perform arithmetic on numbers:<br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>
+<tr><td>+</td><td>Addition</td></tr>
+<tr><td>-</td><td>Subtraction</td></tr>
+<tr><td>*</td><td>Multiplication</td></tr>
+<tr><td>**</td><td>Exponentiation (ES2016)</td></tr>
+<tr><td>/</td><td>Division</td></tr>
+<tr><td>%</td><td>Modulus (Division Remainder)</td></tr>
+<tr><td>++</td><td>Increment</td></tr>
+<tr><td>--</td><td>Decrement</td></tr>
+</table>
+<br><b>JavaScript Assignment Operators</b><br>
+Assignment operators assign values to JavaScript variables.</br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Example&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Same As</th></tr>
+<tr><td>=</td><td>x = y</td><td>x = y</td></tr>
+<tr><td>+=</td><td>x += y</td><td>x = x + y</td></tr>
+<tr><td>-=</td><td>x -= y</td><td>x = x - y</td></tr>
+<tr><td>*=</td><td>x *= y</td><td>x = x * y</td></tr>
+<tr><td>/=</td><td>x /= y</td><td>x = x / y</td></tr>
+<tr><td>%=</td><td>x %= y</td><td>x = x % y</td></tr>
+<tr><td>**=</td><td>x **= y</td><td>x = x ** y</td></tr>
+</table>
+The <b>addition assignment</b> operator (+=) adds a value to a variable.<br><br>
+<b>JavaScript String Operators</b><br>
+The + operator can also be used to add (concatenate) strings.<br>
+The += assignment operator can also be used to add (concatenate) strings.<br>
+When used on strings, the + operator is called the concatenation operator.<br><br>
+<b>Adding Strings and Numbers</b><br>
+Adding two numbers, will return the sum, but adding a number and a string will return a string<br><br>
+<b>JavaScript Comparison Operators</b><br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>
+<tr><td>==</td><td>equal to</td></tr>
+<tr><td>===</td><td>equal value and equal type</td></tr>
+<tr><td>!=</td><td>not equal</td></tr>
+<tr><td>!==</td><td>not equal value or not equal type</td></tr>
+<tr><td>></td><td>greater than</td></tr>
+<tr><td><</td><td>less than</td></tr>
+<tr><td>>=</td><td>greater than or equal to</td></tr>
+<tr><td><=</td><td>less than or equal to</td></tr>
+<tr><td>?</td><td>ternary operator</td></tr>
+</table>
+<br><b>JavaScript Logical Operators</b><br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>
+<tr><td>&&</td><td>logical and</td></tr>
+<tr><td>||</td><td>logical or</td></tr>
+<tr><td>!</td><td>logical not</td></tr>
+</table>
+<br><b>JavaScript Type Operators</b><br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>
+<tr><td>typeof</td><td>Returns the type of a variable</td></tr>
+<tr><td>instanceof</td><td>Returns true if an object is an instance of an object type</td></tr>
+</table>
+<br><b>JavaScript Bitwise Operators</b><br>
+Bit operators work on 32 bits numbers.<br>
+Any numeric operand in the operation is converted into a 32 bit number. The result is converted back to a JavaScript number.<br>
+<table>
+<tr><th>Operator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Description</th></tr>
+<tr><td>&</td><td>AND</td></tr>
+<tr><td>|</td><td>OR</td></tr>
+<tr><td>~</td><td>NOT</td></tr>
+<tr><td>^</td><td>XOR</td></tr>
+<tr><td><<</td><td>Zero fill left shift</td></tr>
+<tr><td>>></td><td>Signed right shift</td></tr>
+<tr><td>>>></td><td>Zero fill right shift</td></tr>
+</table>
+<br><br>
+<a href="https://www.w3schools.com/js/js_operators.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a2" onclick="myFunction_a2()">Operators, code examples</button><br><br>
+<script>
+	function myFunction_a2(){
+		window.location="Codes/_Operators.html";
+		document.write('Please Wait...<br>Redirecting to Operators Page');
+		setTimeout('myFunction_a2()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a3">
+Conditional statements are used to perform different actions based on different conditions.<br>
+Very often when you write code, you want to perform different actions for different decisions.<br>
+You can use conditional statements in your code to do this.<br>
+In JavaScript we have the following conditional statements:
+<ul>
+<li>Use <span>if</span> to specify a block of code to be executed, if a specified condition is true</li>
+<li>Use <span>else</span> to specify a block of code to be executed, if the same condition is false</li>
+<li>Use <span>else if</span> to specify a new condition to test, if the first condition is false</li>
+<li>Use <span>switch</span> to specify many alternative blocks of code to be executed</li>
+</ul>
+<b>The if Statement</b><br>
+Use the <span>if</span> statement to specify a block of JavaScript code to be executed if a condition is true.<br>
+Syntax<br>
+if (condition) {<br>
+  <i>//  block of code to be executed if the condition is true</i><br>
+}<br>
+Note that <span>if</span> is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.<br><br>
+<b>The else Statement</b><br>
+Use the <span>else</span> statement to specify a block of code to be executed if the condition is false.<br>
+<i>if (condition) {<br>
+  //  block of code to be executed if the condition is true<br>
+} else {<br>
+  //  block of code to be executed if the condition is false<br>
+}</i><br><br>
+<b>The else if Statement</b><br>
+Use the <span>else if</span> statement to specify a new condition if the first condition is false.<br>
+Syntax<br>
+<i>if (condition1) {<br>
+  //  block of code to be executed if condition1 is true<br>
+} else if (condition2) {<br>
+  //  block of code to be executed if the condition1 is false and condition2 is true<br>
+} else {<br>
+  //  block of code to be executed if the condition1 is false and condition2 is false<br>
+}</i>
+<br><br>
+<a href="https://www.w3schools.com/js/js_if_else.asp">Reference</a><br><br>
+The <span>switch</span> statement is used to perform different actions based on different conditions.<br>
+<b>The JavaScript Switch Statement</b><br>
+Use the <span>switch</span> statement to select one of many code blocks to be executed.<br>
+Syntax<br>
+<i>switch(expression) {<br>
+  case x:<br>
+    // code block<br>
+    break;<br>
+  case y:<br>
+    // code block<br>
+    break;<br>
+  default:<br>
+    // code block<br>
+}</i><br>
+This is how it works:
+<ul>
+<li>The switch expression is evaluated once.</li>
+<li>The value of the expression is compared with the values of each case.</li>
+<li>If there is a match, the associated block of code is executed.</li>
+<li>If there is no match, the default code block is executed.</li>
+</ul>
+<b>The break Keyword</b><br>
+When JavaScript reaches a <span>break</span> keyword, it breaks out of the switch block.<br>
+This will stop the execution inside the switch block.<br>
+It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.<br>
+<b>Note:</b> If you omit the break statement, the next case will be executed even if the evaluation does not match the case.<br><br>
+<b>The default Keyword</b><br>
+The <b>default</b> keyword specifies the code to run if there is no case match.<br>
+The <span>default</span> case does not have to be the last case in a switch block<br>
+If <span>default</span> is not the last case in the switch block, remember to end the default case with a break.<br><br>
+<b>Common Code Blocks</b><br>
+Sometimes you will want different switch cases to use the same code.<br><br>
+<b>Switching Details</b><br>
+If multiple cases matches a case value, the <b>first</b> case is selected.<br>
+If no matching cases are found, the program continues to the <b>default</b> label.<br>
+If no default label is found, the program continues to the statement(s) <b>after the switch</b>.<br>
+<b>Strict Comparison</b><br>
+Switch cases use <b>strict</b> comparison (===).<br>
+The values must be of the same type to match.<br>
+A strict comparison can only be true if the operands are of the same type.<br>
+<a href="https://www.w3schools.com/js/js_switch.asp">Reference</a><br><br> 
+<button type="button" id="btnLbl-a3" onclick="myFunction_a3()">Conditional statements, code examples</button><br><br>
+<script>
+	function myFunction_a3(){
+		window.location="Codes/_CondStatements.html";
+		document.write('Please Wait...<br>Redirecting to Conditional Statements Page');
+		setTimeout('myFunction_a3()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a4">
+Loops can execute a block of code a number of times.<br>
+Loops are handy, if you want to run the same code over and over again, each time with a different value.<br>
+Often this is the case when working with arrays.<br><br>
+JavaScript supports different kinds of loops:
+<ul>
+<li><span>for</span> - loops through a block of code a number of times</li>
+<li><span>for/in</span> - loops through the properties of an object</li>
+<li><span>for/of</span> - loops through the values of an iterable object</li>
+<li><span>while</span> - loops through a block of code while a specified condition is true</li>
+<li><span>do/while</span> - also loops through a block of code while a specified condition is true</li>
+</ul>
+<b>The For Loop</b>
+The for loop has the following syntax:<br>
+for (<i>statement 1; statement 2; statement 3</i>) {<br>
+  // <i>code block to be executed</i><br>
+}<br><br>
+<u>Statement 1</u> is executed (one time) before the execution of the code block.<br>
+Normally you will use statement 1 to initialize the variable used in the loop (let i = 0).<br>
+This is not always the case, JavaScript doesn't care. Statement 1 is optional.<br>
+You can initiate many values in statement 1 (separated by comma).<br>
+And you can omit statement 1 (like when your values are set before the loop starts).<br><br>
+<u>Statement 2</u> defines the condition for executing the code block.<br>
+Often statement 2 is used to evaluate the condition of the initial variable.<br>
+This is not always the case, JavaScript doesn't care. Statement 2 is also optional.<br>
+If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.<br>
+If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end.<br> This will crash your browser.<br><br>
+<u>Statement 3</u> is executed (every time) after the code block has been executed.<br>
+Often statement 3 increments the value of the initial variable.<br>
+This is not always the case, JavaScript doesn't care, and statement 3 is optional.<br>
+Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.<br>
+Statement 3 can also be omitted (like when you increment your values inside the loop).<br><br>
+<b>Loop Scope</b><br>
+You can use <span>var</span> in the loop, or you can use <span>let</span> in the loop as well.<br>
+Using <span>var</span>, the variable declared in the loop redeclares the variable outside the loop.<br>
+Using <span>let</span>, the variable declared in the loop does not redeclare the variable outside the loop.<br>
+When <span>let</span> is used to declare the <i>i</i> variable in a loop, the <i>i</i> variable will only be visible within the loop.<br><br>
+<a href="https://www.w3schools.com/js/js_loop_for.asp">Reference</a><br><br>
+<b>The While Loop</b><br>
+The while loop loops through a block of code as long as a specified condition is true.<br>
+Syntax<br>
+while (<i>condition</i>) {<br>
+  // <i>code block to be executed</i><br>
+}<br>
+If you forget to increase the variable used in the condition, the loop will never end.<br> This will crash your browser.<br>
+<b>The Do While Loop</b><br>
+The do while loop is a variant of the while loop.<br> This loop will execute the code block once, before checking if the condition is true,<br> then it will repeat the loop as long as the condition is true.<br>
+Syntax<br>
+do {<br>
+  // <i>code block to be executed</i><br>
+}<br>
+while (<i>condition</i>);<br>
+Do not forget to increase the variable used in the condition, otherwise the loop will never end!<br>
+<br><br>
+<a href="https://www.w3schools.com/js/js_loop_while.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a4" onclick="myFunction_a4()">Loops, code examples</button><br><br>
+<script>
+	function myFunction_a4(){
+		window.location="Codes/_Loops.html";
+		document.write('Please Wait...<br>Redirecting to Loops Page');
+		setTimeout('myFunction_a4()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label> 
+<label id="label-a5">
+A JavaScript function is a block of code designed to perform a particular task.<br>
+A JavaScript function is executed when "something" invokes it (calls it).<br><br>
+With functions you can reuse code: Define the code once, and use it many times.<br>
+You can use the same code many times with different arguments, to produce different results.<br><br>
+<b>JavaScript Function Syntax</b><br>
+A JavaScript function is defined with the <span>function</span> keyword, followed by a <b>name</b>, 
+followed by parentheses <b>()</b>.<br>
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).<br>
+The parentheses may include parameter names separated by commas:<br>
+<b><i>(parameter1, parameter2, ...)</i></b><br>
+The code to be executed, by the function, is placed inside curly brackets: <b>{}</b><br>
+function <i>name(parameter1, parameter2, parameter3)</i> {<br>
+  // <i>code to be executed</i><br>
+}<br>
+Function <b>parameters</b> are listed inside the parentheses () in the function definition.<br>
+Function <b>arguments</b> are the <b>values</b> received by the function when it is invoked.<br>
+Inside the function, the arguments (the parameters) behave as local variables.<br>
+A Function is much the same as a Procedure or a Subroutine, in other programming languages.<br><br>
+<b>Function Invocation</b><br>
+The code inside the function will execute when "something" <b>invokes</b> (calls) the function:<br>
+<ul>
+<li>When an event occurs (when a user clicks a button)</li>
+<li>When it is invoked (called) from JavaScript code</li>
+<li>Automatically (self invoked)</li>
+</ul>
+<b>Function Return</b><br>
+When JavaScript reaches a <span>return</span> statement, the function will stop executing.<br>
+If the function was invoked from a statement,<br> JavaScript will "return" to execute the code after the invoking statement.<br>
+Functions often compute a <b>return value</b>. The return value is "returned" back to the "caller":<br><br>
+<b>Functions Used as Variable Values</b></br>
+Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.<br>
+Instead of using a variable to store the return value of a function you can use the function directly, as a variable value.<br></br>
+<b>Local Variables</b></br>
+Variables declared within a JavaScript function, become <b>LOCAL</b> to the function.</br>
+Local variables can only be accessed from within the function.</br>
+Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</br>
+Local variables are created when a function starts, and deleted when the function is completed.
+<br><br>
+<a href="https://www.w3schools.com/js/js_functions.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a5" onclick="myFunction_a5()">Functions, code examples</button><br><br>
+<script>
+	function myFunction_a5(){
+		window.location="Codes/_Functions.html";
+		document.write('Please Wait...<br>Redirecting to Functions Page');
+		setTimeout('myFunction_a5()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a6">
+Objects are variables. Objects can contain many values.<br>
+The values are written as <b>name:value</b> pairs (name and value separated by a colon).<br>
+It is a common practice to declare objects with the <span>const</span> keyword.<br><br>
+<b>Object Definition</b><br>
+You define (and create) a JavaScript object with an object literal:<br>
+Spaces and line breaks are not important. An object definition can span multiple lines.<br><br>
+<b>Object Properties</b><br>
+The <b>name:values</b> pairs in JavaScript objects are called <b>properties</b>.<br><br>
+<b>Accessing Object Properties</b><br>
+You can access object properties in two ways:<br>
+<i>objectName.propertyName</i><br>
+or<br>
+<i>objectName["propertyName"]</i><br>
+JavaScript objects are containers for <b>named values</b> called properties.<br><br>
+<b>Object Methods</b><br>
+Objects can also have <b>methods</b>.<br>
+Methods are <b>actions</b> that can be performed on objects.<br>
+Methods are stored in properties as <b>function definitions</b>.<br>
+A method is a function stored as a property.<br><br>
+<b>The <span>this</span> Keyword</b><br>
+In a function definition, <span>this</span> refers to the "owner" of the function.<br><br>
+<b>Accessing Object Methods</b><br>
+You access an object method with the following syntax:<br>
+<i>objectName.methodName()</i><br>
+If you access a method <b>without</b> the () parentheses, it will return the <b>function definition</b>:<br><br>
+<b>Do Not Declare Strings, Numbers, and Booleans as Objects!</b><br>
+When a JavaScript variable is declared with the keyword "<span>new</span>", the variable is created as an object:<br>
+x = new String();        // Declares x as a String object<br>
+y = new Number();        // Declares y as a Number object<br>
+z = new Boolean();       // Declares z as a Boolean object<br>
+Avoid <span>String</span>, <span>Number</span>, and <span>Boolean</span> objects. They complicate your code and slow down execution speed.<br><br>
+<a href="https://www.w3schools.com/js/js_objects.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a6" onclick="myFunction_a6()">JS ObjectGeneral Overview, code examples</button><br><br>
+<script>
+	function myFunction_a6(){
+		window.location="Codes/_ObjectsGenOv.html";
+		document.write('Please Wait...<br>Redirecting to Objects General Overview Page');
+		setTimeout('myFunction_a6()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a7">
+Built-in objects are not related to any Window or DOM object model.<br>
+These objects are used for simple data processing in the JavaScript.<br><br>
+<b>1. Math Object</b><br>
+<ul>
+<li>Math object is a built-in static object.</li>
+<li>It is used for performing complex math operations.<br></li>
+</ul>
+Example:<br>
+var value = Math.abs(20);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// returns the absolute value of a number.<br>
+<b>2. Date Object</b><br>
+<ul>
+<li>Date is a data type.</li>
+<li>Date object manipulates date and time.</li>
+<li>Date() constructor takes no arguments.</li>
+<li>Date object allows you to get and set the year, month, day, hour, minute, second and millisecond fields.</li>
+</ul>
+Syntax:<br>
+var variable_name = new Date();<br>
+Example:<br>
+var current_date = new Date();<br><br>
+<b>3. String Object</b><br>
+<ul>
+<li>String objects are used to work with text.</li>
+<li>It works with a series of characters.</li>
+</ul>
+Syntax:<br>
+var variable_name = new String(string);<br>
+Example:<br>
+var s = new String(string);<br>
+<br>
+<a href="https://www.tutorialride.com/javascript/javascript-built-in-objects.htm#:~:text=JavaScript%20Built-in%20Objects%201%20Math%20Object%20Math%20object,constructor%20takes%20no%20arguments.%20...%203%20String%20Object">Reference</a><br><br>
+<b>4.  Error Object</b></br>
+The <span>Error</span> constructor creates an error object. Instances of <span>Error</span> objects are thrown when runtime errors occur.<br> 
+The <span>Error</span> object can also be used as a base object for user-defined exceptions.<br>
+Syntax<br>
+new Error([<i>message</i>[, <i>fileName</i>[, <i>lineNumber</i>]]])<br>
+<b>Parameters</b><br>
+<b><span>message</span></b><br>
+Optional. Human-readable description of the error.<br>
+<b><span>fileName</span></b><br>
+Optional. The value for the <span>fileName</span> property on the created <span>Error</span> object.<br> 
+Defaults to the name of the file containing the code that called the <span>Error()</span> constructor.<br>
+<b><span>lineNumber</span></b><br>
+Optional. The value for the <span>lineNumber</span> property on the created <span>Error</span> object.<br> 
+Defaults to the line number containing the <span>Error()</span> constructor invocation.<br>
+Description<br>
+Runtime errors result in new <span>Error</span> objects being created and thrown.<br>
+This page documents the use of the <span>Error</span> object itself and its use as a constructor function.<br>
+<b>Example</b><br>
+Throwing a generic error<br>
+Usually you create an <span>Error</span> object with the intention of raising it using the <i>throw</i> keyword.<br> 
+You can handle the error using the <i>try...catch</i> construct:<br>
+try {<br>
+  throw new Error('Whoops!');<br>
+} catch (e) {<br>
+  console.log(e.name + ': ' + e.message);<br>
+}<br>
+<a href="https://reference.codeproject.com/javascript/Reference/Global_Objects/Error">Reference</a><br><br>
+<b>5. Number Object</b><br>
+The <b><span>Number</span></b> JavaScript object is a wrapper object allowing you to work with numerical values.<br> A <span>Number</span> object is created using the <span>Number()</span> constructor.<br>
+Syntax<br>
+new Number(value);<br>
+<b>Parameters</b><br>
+<b><span>value</span></b><br>
+The numeric value of the object being created.<br>
+<b>Description</b><br>
+The primary uses for the <span>Number</span> object are:<br>
+<ul>
+<li>If the argument cannot be converted into a number, it returns <i>NaN</i>.</li>
+<li>In a non-constructor context (i.e., without the <i>new</i> operator), <span>Number</span> can be used to perform a type conversion.</li>
+</ul>
+<b>Examples<br>
+Using the <span>Number</span> object to assign values to numeric variables</b><br>
+The following example uses the Number object's properties to assign values to several numeric variables:<br>
+var biggestNum = Number.MAX_VALUE;<br>
+var smallestNum = Number.MIN_VALUE;<br>
+var infiniteNum = Number.POSITIVE_INFINITY;<br>
+var negInfiniteNum = Number.NEGATIVE_INFINITY;<br>
+var notANum = Number.NaN;<br>
+<a href="https://reference.codeproject.com/javascript/Reference/Global_Objects/Number">Reference</a><br><br>
+<br><br>
+<button type="button" id="btnLbl-a7" onclick="myFunction_a7()">JS Built-in Objects, code examples</button><br><br>
+<script>
+	function myFunction_a7(){
+		window.location="Codes/_BuiltInObjects.html";
+		document.write('Please Wait...<br>Redirecting to Built-in Objects Page');
+		setTimeout('myFunction_a7()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a8">
+JavaScript arrays are used to store multiple values in a single variable.<br>
+An array is a special variable, which can hold more than one value at a time.<br>
+An array can hold many values under a single name, and you can access the values by referring to an index number.<br><br>
+<b>Creating an Array</b><br>
+Using an array literal is the easiest way to create a JavaScript Array.<br>
+Syntax:<br>
+<i>const array_name = [item1, item2, ...];</i><br>
+Spaces and line breaks are not important. A declaration can span multiple lines.<br>
+You can also create an array, and then provide the elements.<br><br>
+<b>Using the JavaScript Keyword <i>new</i></b><br>
+The following example also creates an Array, and assigns values to it:<br>
+Example<br>
+<i>const cars = new Array("Saab", "Volvo", "BMW");</i><br>
+The two examples above do exactly the same.<br>
+There is no need to use <span>new Array()</span>.<br>
+For simplicity, readability and execution speed, use the first one (the array literal method).<br><br>
+<b>Accessing Array Elements</b><br>
+You access an array element by referring to the index number.<br>
+Note: Array indexes start with 0.
+[0] is the first element. [1] is the second element.<br><br>
+<b>Changing an Array Element</b><br>
+This statement changes the value of the first element in <span>cars</span>:<br>
+<i>cars[<span>0</span>] = "Opel";</i><br><br>
+<b>Access the Full Array</b><br>
+With JavaScript, the full array can be accessed by referring to the array name.<br><br>
+<b>Arrays are Objects</b><br>
+Arrays are a special type of objects. The <span>typeof</span> operator in JavaScript returns "object" for arrays.<br>
+But, JavaScript arrays are best described as arrays.<br>
+Arrays use <b>numbers</b> to access its "elements".<br>
+Objects use <b>names</b> to access its "members".<br><br>
+<b>Array Elements Can Be Objects</b><br>
+JavaScript variables can be objects. Arrays are special kinds of objects.<br>
+Because of this, you can have variables of different types in the same Array.<br>
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array.<br><br>
+<b>Array Properties and Methods</b><br>
+The real strength of JavaScript arrays are the built-in array properties and methods:<br>
+cars.length   <i>// Returns the number of elements</i><br>
+cars.sort()   <i>// Sorts the array</i><br><br>
+<b>The length Property</b><br>
+The <span>length</span> property of an array returns the length of an array (the number of array elements).<br>
+The length property is always one more than the highest array index.<br><br>
+<b>Accessing the First Array Element</b><br>
+Example<br>
+<i>const fruits = ["Banana", "Orange", "Apple", "Mango"];</i><br>
+<i>fruits[0];    // Returns "Banana"</i><br><br>
+<b>Accessing the Last Array Element</b><br>
+Example<br>
+<i>const fruits = ["Banana", "Orange", "Apple", "Mango"];</i><br>
+<i>fruits[fruits.length - 1];  // Returns "Mango"</i><br><br>
+<b>Looping Array Elements</b><br>
+The safest way to loop through an array, is using a <span>for</span> loop.<br>
+You can also use the <span>Array.forEach()</span> function.<br><br>
+<b>Adding Array Elements</b><br>
+The easiest way to add a new element to an array is using the <span>push()</span> method:<br>
+New element can also be added to an array using the <span>length</span> property.<br>
+WARNING !<br>
+Adding elements with high indexes can create undefined "holes" in an array.<br><br>
+<b>Associative Arrays</b><br>
+Many programming languages support arrays with named indexes.<br>
+Arrays with named indexes are called associative arrays (or hashes).<br>
+JavaScript does <b>not</b> support arrays with named indexes.<br>
+In JavaScript, <b>arrays</b> always use <b>numbered indexes</b>.<br>
+<b>WARNING !!</b><br>
+If you use named indexes, JavaScript will redefine the array to an object.<br>
+After that, some array methods and properties will produce <b>incorrect results</b>.<br><br>
+<b>The Difference Between Arrays and Objects</b><br>
+In JavaScript, <b>arrays</b> use <b>numbered indexes</b>.<br> 
+In JavaScript, <b>objects</b> use <b>named indexes</b>.<br>
+Arrays are a special kind of objects, with numbered indexes.<br>
+When to Use Arrays. When to use Objects.
+<ul>
+<li>JavaScript does not support associative arrays.</li>
+<li>You should use <b>objects</b> when you want the element names to be <b>strings (text)</b>.</li>
+<li>You should use <b>arrays</b> when you want the element names to be <b>numbers</b>.</li>
+</ul>
+<b>Avoid new Array()</b><br>
+There is no need to use the JavaScript's built-in array constructor <span>new</span> Array().<br>
+<b>Use <span>[]</span> instead.</b><br>
+These two different statements both create a new empty array named points:<br>
+<i>const points = new Array();     // Bad<br>
+const points = [];              // Good</i><br>
+The <span>new</span> keyword only complicates the code. It can also produce some unexpected results.<br><br>
+<b>How to Recognize an Array</b><br>
+A common question is: How do I know if a variable is an array?<br>
+The problem is that the JavaScript operator <span>typeof</span> returns "<span>object</span>":<br>
+The typeof operator returns object because a JavaScript array is an object.<br>
+<br><br>
+<a href="https://www.w3schools.com/js/js_arrays.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a8" onclick="myFunction_a8()">Array Object, code examples</button><br><br>
+<script>
+	function myFunction_a8(){
+		window.location="Codes/_ArrayObject.html";
+		document.write('Please Wait...<br>Redirecting to Array Object Page');
+		setTimeout('myFunction_a8()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-a9">
+JavaScript strings are used for storing and manipulating text.<br>
+A JavaScript string is zero or more characters written inside quotes.<br>
+You can use single <span>'...'</span> or double <span>"..."</span> quotes.<br>
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string.<br><br>
+<b>String Length</b><br>
+To find the length of a string, use the built-in <span>length</span> property.<br><br>
+<b>Escape Character</b><br>
+Because strings must be written within quotes, JavaScript will misunderstand this string:<br>
+<i>let text = <span>"We are the so-called "</span>Vikings<span>" from the north."</span></i>;<br>
+The string will be chopped to "We are the so-called ".<br>
+The solution to avoid this problem, is to use the <b>backslash escape character</b>.<br>
+The backslash (<span>\</span>) escape character turns special characters into string characters:<br>
+<table>
+<tr>
+<th>Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>\'</td>
+<td>'</td>
+<td>Single quote</td>
+</tr>
+<tr>
+<td>\"</td>
+<td>"</td>
+<td>Double quote</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>\</td>
+<td>Backslash</td>
+</tr>
+</table><br>
+Six other escape sequences are valid in JavaScript:<br>
+<table>
+<tr>
+<th>Code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th>Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+</tr>
+<tr>
+<td>\b</td>
+<td>Backspace</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>Form Feed</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>New Line</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>Carriage Return</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>Horizontal Tabulator</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>Vertical Tabulator</td>
+</tr>
+</table><br>
+<b>Breaking Long Code Lines</b><br>
+For best readability, programmers often like to avoid code lines longer than 80 characters.<br>
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator.<br>
+You can also break up a code line <b>within a text string</b> with a single backslash.<br>
+The <span>\</span> method is not the preferred method. It might not have universal support.<br>
+Some browsers do not allow spaces behind the <span>\</span> character.<br>
+A safer way to break up a string, is to use string addition '<span>+</span>'.<br>
+You cannot break up a code line with a backslash.<br><br>
+<b>Strings Can be Objects</b><br>
+Normally, JavaScript strings are primitive values, created from literals:<br>
+<i><span>let firstName = "John";</span></i><br>
+But strings can also be defined as objects with the keyword <span>new</span>:<br>
+<i><span>let firstName = new String("John");</span></i><br><br>
+Don't create strings as objects. It slows down execution speed.<br>
+The new keyword complicates the code. This can produce some unexpected results:<br>
+When using the == operator, equal strings are equal:<br>
+When using the === operator, equal values may not be equal,<br> 
+because the === operator expects equality in both data type and value.<br>
+Note the difference between <span>(x==y)</span> and </span>(x===y)</span>.<br>
+Also note that comparing two JavaScript objects will <b>always</b> return <span>false</span>.<br>
+Example<br>
+<i>let x = "John";<br>             
+let y = new String("John");<br>
+// (x == y) is true because x and y have equal values<br>
+// (x === y) is false because x and y have different types (string and object)</i><br><br>
+Objects cannot be compared:<br>
+Example<br>
+<i>let x = new String("John");<br>             
+let y = new String("John");<br>
+// (x == y) is false because x and y are objects<br>
+// (x === y) is false because x and y are objects</i><br>
+<br><br>
+<a href="https://www.w3schools.com/js/js_strings.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-a9" onclick="myFunction_a9()">String Object, code examples</button><br><br>
+<script >
+	function myFunction_a9(){
+		window.location="Codes/_StringObject.html";
+		document.write('Please Wait...<br>Redirecting to String Object Page');
+		setTimeout('myFunction_a9()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="flip2"><h1>JavaScript - Web Browser - Web Document Interaction</h1></div>
+<div id="panel2">
+<table>
+<tr>
+<td>
+<h3>
+<ol>
+	<li id="li-b1">Browser Objects</li>
+	<li id="li-b2">HTML Objects</li>
+	<li id="li-b3">Events</li>
+</ol>	
+</h3>
+</td>
+<td id="label2">
+<label></label>
+</td>
+<td id="label4">
+<label id="def-b">To detail the general syntax, methods, and properties (if applicable) press the subject on the left panel</label>
+<label id="label-b1">
+The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.<br><br>
+<b>The Browser Object Model (BOM)</b><br>
+There are no official standards for the Browser Object Model (BOM).<br>
+Since modern browsers have implemented (almost) the same methods and properties for JavaScript interactivity,<br> it is often referred to, as methods and properties of the BOM.<br><br>
+<b>JavaScript Browser Objects Examples</b><br>
+<ul>
+<li>Window Object.</li>
+<li>Screen Object.</li>
+<li>Location Object.</li>
+<li>History Object.</li>
+<li>Navigator Object.</li>
+<li>Popup Alert.</li>
+<li>Timing.</li>
+<li>Cookies.</li>
+</ul>
+<b>The Window Object</b><br>
+The <span>window</span> object is supported by all browsers. It represents the browser's window.<br>
+All global JavaScript objects, functions, and variables automatically become members of the window object.<br>
+Global variables are properties of the window object.<br>
+Global functions are methods of the window object.<br>
+Even the document object (of the HTML DOM) is a property of the window object:<br>
+<i>window.document.getElementById("header");</i><br>
+is the same as:<br>
+<i>document.getElementById("header");</i><br>
+<a href="https://www.w3schools.com/js/js_window.asp">Reference</a><br><br>
+<b>Window Screen</b><br>
+The window.screen object contains information about the user's screen.<br>
+The <span>window.screen</span> object can be written without the window prefix.<br>
+<a href="https://www.w3schools.com/js/js_window_screen.asp">Reference</a><br><br>
+<b>Window Location</b><br>
+The <span>window.location</span> object can be used to get the current page address (URL)<br> and to redirect the browser to a new page.<br>
+The <span>window.location</span> object can be written without the window prefix.<br>
+<a href="https://www.w3schools.com/js/js_window_location.asp">Reference</a><br><br>
+<b>Window History</b><br>
+The <span>window.history</span> object contains the browsers history.<br>
+The <span>window.history</span> object can be written without the window prefix.<br>
+To protect the privacy of the users, there are limitations to how JavaScript can access this object.<br>
+<a href="https://www.w3schools.com/js/js_window_history.asp">Reference</a><br><br>
+<b>Window Navigator</b><br>
+The <span>window.navigator</span> object contains information about the visitor's browser.<br>
+The <span>window.navigator</span> object can be written without the window prefix.<br>
+<a href="https://www.w3schools.com/js/js_window_navigator.asp">Reference</a><br><br>
+<b>JavaScript Popup Boxes</b><br>
+<b>Alert Box</b><br>
+JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.<br>
+An alert box is often used if you want to make sure information comes through to the user.<br>
+When an alert box pops up, the user will have to click "OK" to proceed.<br>
+Syntax<br>
+<i>window.alert("sometext");</i><br>
+The window.alert() method can be written without the window prefix.<br>
+<a href="https://www.w3schools.com/js/js_popup.asp">Reference</a><br><br>
+<b>Java Script Timing Events</b><br>
+JavaScript can be executed in time-intervals.<br>
+This is called timing events.<br>
+The <span>window</span> object allows execution of code at specified time intervals.<br>
+These time intervals are called timing events.<br>
+The two key methods to use with JavaScript are:
+<ul>
+<li><span>setTimeout(function, milliseconds)</span><br>
+Executes a function, after waiting a specified number of milliseconds.</li>
+<li><span>setInterval(function, milliseconds)</span><br>
+Same as setTimeout(), but repeats the execution of the function continuously.</li>
+</ul>
+The <span>setTimeout()</span> and <span>setInterval()</span> are both methods of the HTML DOM Window object.<br>
+<a href="https://www.w3schools.com/js/js_timing.asp">Reference</a><br><br>
+<b>JavaScript Cookies</b><br>
+Cookies let you store user information in web pages.<br>
+Cookies are data, stored in small text files, on your computer.<br>
+When a web server has sent a web page to a browser, the connection is shut down,<br> and the server forgets everything about the user.<br>
+Cookies were invented to solve the problem "how to remember information about the user":<br>
+<ul>
+<li>When a user visits a web page, his/her name can be stored in a cookie.</li>
+<li>Next time the user visits the page, the cookie "remembers" his/her name.</li>
+</ul>
+Cookies are saved in name-value pairs like:<br>
+<i>username = John Doe</i><br>
+When a browser requests a web page from a server, cookies belonging to the page are added to the request.<br> This way the server gets the necessary data to "remember" information about users.<br>
+None of the examples below will work if your browser has local cookies support turned off.<br>
+<a href="https://www.w3schools.com/js/js_cookies.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-b1" onclick="myFunction_b1()">Browser Objects, code examples</button><br><br>
+<script >
+	function myFunction_b1(){
+		window.location="Codes/_BrowserObjects.html";
+		document.write('Please Wait...<br>Redirecting to Browser Objects Page');
+		setTimeout('myFunction_b1()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-b2">
+<b>JavaScript HTML DOM</b><br>
+With the HTML DOM, JavaScript can access and change all the elements of an HTML document.<br>
+<b>The HTML DOM (Document Object Model)</b><br>
+When a web page is loaded, the browser creates a Document Object Model of the page.<br>
+The <b>HTML DOM</b> model is constructed as a tree of <b>Objects</b>.<br><br>
+<b>What is the HTML DOM?</b><br>
+The HTML DOM is a standard <b>object</b> model and <b>programming interface</b> for HTML. It defines:
+<ul>
+<li>The HTML elements as <b>objects</b></li>
+<li>The <b>properties</b> of all HTML elements</li>
+<li>The <b>methods</b> to access all HTML elements</li>
+<li>The <b>events</b> for all HTML elements</li>
+</ul>
+In other words: <b>The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</b><br>
+<a href="https://www.w3schools.com/js/js_htmldom.asp">Reference</a><br><br>
+<b>JavaScript HTML DOM - Changing HTML</b><br>
+The HTML DOM allows JavaScript to change the content of HTML elements.<br>
+<b>Changing HTML Content</b><br>
+The easiest way to modify the content of an HTML element is by using the <span>innerHTML</span> property.<br>
+To change the content of an HTML element, use this syntax:<br>
+<i>document.getElementById(id).innerHTML = new HTML</i><br>
+<a href="https://www.w3schools.com/js/js_htmldom_html.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-b2" onclick="myFunction_b2()">HTML Objects, code examples</button><br><br>
+<script >
+	function myFunction_b2(){
+		window.location="Codes/_HTMLObjects.html";
+		document.write('Please Wait...<br>Redirecting to HTML Objects Page');
+		setTimeout('myFunction_b2()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+<label id="label-b3">
+<b>JavaScript Events</b>
+HTML events are <b>"things"</b> that happen to HTML elements.<br>
+When JavaScript is used in HTML pages, JavaScript can <b>"react"</b> on these events.<br>
+<b>HTML Events</b><br>
+An HTML event can be something the browser does, or something a user does.<br>
+Here are some examples of HTML events:<br>
+<ul>
+<li>An HTML web page has finished loading</li>
+<li>An HTML input field was changed</li>
+<li>An HTML button was clicked</li>
+</ul>
+Often, when events happen, you may want to do something.<br>
+JavaScript lets you execute code when events are detected.<br>
+HTML allows event handler attributes, <b>with JavaScript code</b>, to be added to HTML elements.<br><br>
+JavaScript code is often several lines long. It is more common to see event attributes calling functions:<br>
+Example<br>
+<i>< button onclick="displayDate()">The time is?< /button></i><br><br>
+<b>Common HTML Events</b><br>
+Here is a list of some common HTML events:<br><br>
+<table>
+<tr>
+<th>Event</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>onchange</td>	
+<td>An HTML element has been changed</td>
+</tr>
+<tr>
+<td>onclick</td>	
+<td>The user clicks an HTML element</td>
+</tr>
+<tr>
+<td>onmouseover&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>The user moves the mouse over an HTML element</td>
+</tr>
+<tr>
+<td>onmouseout</td>	
+<td>The user moves the mouse away from an HTML element</td>
+</tr>
+<tr>
+<td>onkeydown</td>	
+<td>The user pushes a keyboard key</td>
+</tr>
+<tr>
+<td>onload</td>
+<td>The browser has finished loading the page</td>
+</tr>
+</table>
+<br><br>
+<a href="https://www.w3schools.com/js/js_events.asp">Reference</a><br><br>
+<button type="button" id="btnLbl-b3" onclick="myFunction_b3()">Events, code examples</button><br><br>
+<script >
+	function myFunction_b3(){
+		window.location="Codes/_Events.html";
+		document.write('Please Wait...<br>Redirecting to Events Page');
+		setTimeout('myFunction_b3()',3000);//after 3 seconds destination page will be loaded
+	}
+</script>
+</label>
+</td>
+</tr>
+</table>
+</div>	
+</body>
+</html>
