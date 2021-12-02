@@ -1,0 +1,277 @@
+{
+  "catBreeds": "The Best Cat Breed For You",
+  "inspiredBy": "List of Cat Breeds",
+  "link": "https://www.petfinder.com/cat-breeds/",
+  "title": "Olga Durham, st#: 040687883",
+  "date": "2021-11-30",
+  "active": true,
+  "cats": [{
+      "choice": "./images/largest-domestic-cat.jpg",
+      "name": "Large Domestic Cats",
+      "adoption": "medium",
+      "popularity": 0.7,
+      "cost": "$1000-2000",
+      "breed": [
+        "Siberian",
+        "Ragamuffin",
+        "Ragdoll",
+        "Turkish Van",
+        "Maine Coon",
+        "British Shorthair",
+        "Bengal",
+        "Pixiebob",
+        "Notwegian Forest Cat",
+        "American Bobtail",
+        "Selkirk Rex",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "care": [
+        "regular hunting in owners' backyard",
+        "daily walk in harness",
+        "3-meal feeding",
+        "additional litter box"
+      ]
+    },
+    {
+      "choice": "./images/black-cat.jpg",
+      "name": "Black Cat Breeds",
+      "adoption": "high",
+      "popularity": 0.5,
+      "cost": "$250-1000",
+      "breed": [
+        "American Bobtail",
+        "American Curl",
+        "American Shorthair",
+        "Bombay",
+        "British Shorthair",
+        "Cornish Rex",
+        "Devon Rex",
+        "Exotic Shorthair",
+        "Japanese Bobtail",
+        "Maine Coon",
+        "Norwegian Forest Cat",
+        "Oriental Short Hair",
+        "Persian",
+        "Scottish Fold",
+        "Selkirk Rex",
+        "Siberian",
+        "Sphynx",
+        "Turkish Angora",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "care": [
+        "catnip",
+        "owners' attention",
+        "regular brushing",
+        "teeth care"
+      ]
+    },
+    {
+      "choice": "./images/white-cat.jpg",
+      "name": "White Cats",
+      "adoption": "medium",
+      "popularity": 0.65,
+      "cost": "$550-1200",
+      "breed": [
+        "American Curl",
+        "American Shorthair",
+        "British Shorthair",
+        "Cornish Rex",
+        "Devon Rex",
+        "Japanese Bobtail",
+        "Maine Coon",
+        "Norvegian Forest Cat",
+        "Oriental Short Hair",
+        "Persian",
+        "Scottish Fold",
+        "Siberian",
+        "Sphynx",
+        "Turkish Angora",
+        "Turkish Van",
+        ""
+      ],
+      "care": [
+        "regular brushing",
+        "cat furniture",
+        "eye & ear care",
+        "vitamins"
+      ]
+    },
+    {
+      "choice": "./images/cutest-cat.jpg",
+      "name": "Cutest Cat Breeds",
+      "adoption": "high",
+      "popularity": 0.85,
+      "cost": "$1250-2100",
+      "breed": [
+        "Maine Coon",
+        "British Shorthair",
+        "Bengal",
+        "Munchkin",
+        "Siamese",
+        "Persian",
+        "Ragdoll",
+        "Scottish Fold",
+        "Birman",
+        "Russian Blue",
+        ""
+      ],
+      "care": [
+        "owners' attention",
+        "cat toys",
+        "regular brushing",
+        "special diet"
+      ]
+    },
+    {
+      "choice": "./images/fluffy-cat.jpg",
+      "name": "Fluffy Cats",
+      "adoption": "low",
+      "popularity": 0.75,
+      "cost": "$750-1300",
+      "breed": [
+        "Maine Coon",
+        "Munchkin",
+        "Persian",
+        "Ragdoll",
+        "Scottish Fold",
+        "Norwegian Forest Cat",
+        "Himalayan",
+        "Manx",
+        "Ragamuffin",
+        "Birman",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "care": [
+        "regular grooming",
+        "regular brushing",
+        "longhair pet shampoo",
+        "litter for longhair cat"
+      ]
+    },
+    {
+      "choice": "./images/cats-like-water.jpg",
+      "name": "Cats Who Like Water",
+      "adoption": "high",
+      "popularity": 0.7,
+      "cost": "$800-1600",
+      "breed": [
+        "Maine Coon",
+        "Turkish Angora",
+        "Japanese Bobtail",
+        "American Bobtail",
+        "Manx",
+        "Norwegian Forest Cat",
+        "American Shorthair",
+        "Turkish Van",
+        "Bengal",
+        "",
+        ""
+      ],
+      "care": [
+        "regular brushing",
+        "drink fountain",
+        "weekly bathing",
+        "take a walk in pet stroller"
+      ]
+    },
+    {
+      "choice": "./images/hypoallergenic-cat.jpg",
+      "name": "Hypoallergenic Cats",
+      "adoption": "high",
+      "popularity": 0.9,
+      "cost": "$1250-2400",
+      "breed": [
+        "Balinese",
+        "Oriental Short Hair",
+        "Javanese",
+        "Devon Rex",
+        "Cornish Rex",
+        "Sphynx",
+        "Siberian",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "care": [
+        "personal space",
+        "weekly bathing",
+        "regular brushing",
+        "food diet"
+      ]
+    },
+    {
+      "choice": "./images/cats-for-kids.jpg",
+      "name": "Best Cat Breeds for Kids",
+      "adoption": "high",
+      "popularity": 0.95,
+      "cost": "$900-1800",
+      "breed": [
+        "Abyssinian",
+        "Birman",
+        "Burmese",
+        "Maine Coon",
+        "Manx",
+        "Ragdoll",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "care": [
+        "owners' attention",
+        "regular bathing",
+        "high level protein food",
+        "daily play"
+      ]
+    },
+    {
+      "choice": "./images/hairless-cat.jpg",
+      "name": "Hairless Cats",
+      "adoption": "low",
+      "popularity": 0.85,
+      "cost": "$1300-2500",
+      "breed": [
+        "Sphynx",
+        ""
+      ],
+      "care": [
+        "warm clothes",
+        "skin care",
+        "vitamins",
+        "sun protectors"
+      ]
+    }
+  ]
+}
